@@ -1,0 +1,97 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  position: relative;
+  /* background-color: rgb(54, 48, 48); */
+  background-image: url("../bilder/bakgrundsKod.png");
+}
+
+.Title {
+  position: relative;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+}
+.webareaText {
+  letter-spacing: 10px;
+  padding-top: 5px;
+  position: absolute;
+  left: 600px;
+  display: inline;
+  color: white;
+  font-family: "Mulish", sans-serif;
+}
+.webareaText:hover {
+  cursor: pointer;
+}
+.titleBox {
+  font-family: "Mulish", sans-serif;
+  /* margin-left: 150px; */
+  width: 400px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.Title {
+  font-family: "Mulish", sans-serif;
+  background-color: rgba(0, 0, 0, 0.671);
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 25px;
+  padding-left: 100px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+.peopleBoxes {
+  margin-top: 10px;
+  background-color: rgba(85, 102, 255, 0.425);
+  /* border-radius: 55px; */
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(2, 300px);
+}
+
+.chrillesBox {
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+}
+
+.callesBox {
+  grid-row: 2 / 3;
+  grid-column: 6 / 7;
+}
+.antonsBox {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.Chrille,
+.Calle,
+.Anton {
+  width: 400px;
+  height: 250px;
+  background-image: url("../bilder/bakgrundsKod.png");
+  background-size: 100%;
+  filter: blur(1px);
+  /* border: 3px solid black; */
+  text-align: center;
+  border-radius: 25px;
+}
+
+.Chrille:hover,
+.Anton:hover,
+.Calle:hover {
+  cursor: pointer;
+  width: 450px;
+  height: 260px;
+  margin-left: -22px;
+  filter: blur(0px);
+}
+.hidden {
+  display: none;
+}

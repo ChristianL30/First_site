@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  height: 100%;
+  /* COLOR */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgb(46, 171, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  background-repeat: no-repeat;
+}
+header {
+  /* POSITION */
+  margin-top: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+#main {
+  text-align: center;
+  margin-right: 100px;
+  margin-top: 150px;
+}
+
+h1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 50px;
+}
+.password-txt {
+  position: relative;
+  margin-left: 50px;
+}

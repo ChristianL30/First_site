@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  height: 100%;
+  /* COLOR */
+  background: linear-gradient(
+      0deg,
+      rgba(136, 136, 136, 0) 89%,
+      rgb(255, 255, 255) 90%
+    ),
+    url("/bilder/bakgrundsKod.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  /* POSITION */
+  padding-top: 8px;
+  margin-top: -400px;
+  padding-left: 200px;
+  margin-right: 200px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  position: fixed;
+}
+
+#Title {
+  display: inline-block;
+  /* POSITION */
+  text-align: center;
+  padding-left: 245px;
+  padding-bottom: 10px;
+  /* FONT */
+  font-size: 40px;
+  /* font-family: "Anton", sans-serif; */
+  font-family: "Mulish", sans-serif;
+  letter-spacing: 5px;
+}
+.options-img {
+  margin-left: 325px;
+  margin-bottom: -2px;
+  width: 40px;
+}
+
+.logo-img {
+  /* SIZE */
+  width: 50px;
+  /* POSITION */
+  margin-left: 50px;
+  margin-bottom: -7px;
+}
+
+.firstText {
+  background-color: rgba(255, 255, 255, 0.925);
+  margin-top: 400px;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+.secondText {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.692) 47%,
+    rgba(3, 81, 203, 0.8858893899356618) 47%
+  );
+  padding-bottom: 200px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 100%;
+}
+
+.Welcome-title {
+  /* POSITION */
+  margin-left: 100px;
+  margin-top: 10px;
+  /* SIZE */
+
+  /* BORDER */
+  border-bottom: 2px solid black;
+  /* FONT */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 55px;
+  font-family: "Mulish", sans-serif;
+  display: inline-block;
+}
+.about-us {
+  /* POSITION */
+  margin-left: 150px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 500px;
+  /* FONT */
+}
+
+.contactButton {
+  width: 47%;
+  height: 150px;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: white;
+  background: rgba(44, 155, 0, 0.877);
+}
+.contactButton:hover {
+  cursor: pointer;
+  background: rgba(35, 122, 1, 0.966);
+}
+.interested-title {
+  /* POSITION */
+  margin-left: 1000px;
+  margin-top: 10px;
+  /* SIZE */
+
+  /* BORDER */
+  border-bottom: 2px solid rgb(255, 255, 255);
+  /* FONT */
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 55px;
+  font-family: "Mulish", sans-serif;
+  display: inline-block;
+}
+
+.interestedText {
+  /* POSITION */
+  margin-left: 850px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 500px;
+  /* FONT */
+  color: white;
+}
+
+.bild1 {
+  width: 400px;
+  height: 200px;
+  margin-left: 300px;
+  margin-bottom: 100px;
+}
+footer {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  /* position: absolute; */
+  /* left: 0;
+  bottom: 0; */
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+}
+.footerOptions {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+li {
+  /* FIXME linkarna är fucked */
+  /* i forgor what i meant to fix LOL */
+  margin-bottom: 10px;
+  display: inline-block;
+  display: grid;
+}
+li:last-child {
+  margin-bottom: 0px;
+}
+.credits {
+  bottom: 10px;
+  left: 1070px;
+}
+
+/* DROP DOWN WHACK */
+.dropbtn {
+  position: relative;
+  background-color: #3498db00;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #297fb900;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  border-radius: 10px;
+  position: absolute;
+  top: -2px;
+  right: -19px;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 78px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: rgb(179, 179, 179);
+}
+
+.show {
+  display: block;
+}

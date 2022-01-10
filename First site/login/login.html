@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login for WEB-AREA</title>
+    <!-- fonts -->
+
+    <!-- ANTON' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MULLISH -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Lobster+Two:ital@1&family=Mulish:wght@300&family=Qwitcher+Grypen&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <link rel="stylesheet" href="style-login.css" />
+  </head>
+  <body>
+    <header>
+      <div id="main">
+        <h1>LOGIN</h1>
+        <form method="POST">
+          <h2>USERNAME</h2>
+          <input type="text" name="USER" class="text" required />
+          <h2>PASSWORD</h2>
+          <input
+            type="password"
+            name="PASS"
+            class="text password-txt"
+            required
+          />
+          <input type="Submit" name="submit" id="sub" />
+        </form>
+      </div>
+    </header>
+  </body>
+</html>
+
+<?php
+  if (isset($_POST['submit'])){
+    $USERNAME = $_POST['USER'];
+    $PASSWORD = $_POST['PASS'];
+    if ($USERNAME=='admin' && $PASSWORD=='password123'){
+      header("location:index.html");
+      exit();
+    } else {
+      echo 'invalid pass or username ☹';
+    }
+  }
+?>
